@@ -37,6 +37,18 @@ export class HeroService {
 	);  
   }
 	
+	/** get heroes whose name contains search term */
+	
+	searchHeroes(term: string): Observable<Hero[]> {
+		if (!term.trim()) {
+			// if not search term, return empty hero array.
+			
+		}
+		
+	}
+	
+	
+	
 	//////// save methods //////////
 	/** POST: add a new hero to the server */
 	addHero (hero: Hero): Observable<Hero> {
